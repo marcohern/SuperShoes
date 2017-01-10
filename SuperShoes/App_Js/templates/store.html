@@ -1,0 +1,11 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{store.Name}}
+    </div>
+    <div class="panel-body">
+        <div>{{store.Address}}</div>
+        <ul>
+            <li ng-repeat="article in store.Articles">{{article.Name}}</li>
+        </ul>
+    </div>
+</div>

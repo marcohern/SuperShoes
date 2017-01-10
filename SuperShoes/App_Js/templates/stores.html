@@ -1,0 +1,14 @@
+﻿<h2>Stores</h2>
+<div class="row">
+    <div class="col-sm-4" ng-repeat="store in stores">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                {{store.Name}}
+            </div>
+            <div class="panel-body">
+                <div>{{store.Address}}</div>
+                <a class="btn btn-success" href="#!/store/{{store.Id}}">Go</a>
+            </div>
+        </div>
+    </div>
+</div>

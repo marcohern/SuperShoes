@@ -1,0 +1,16 @@
+﻿<h2>Articles</h2>
+<div class="row">
+    <div class="col-sm-4" ng-repeat="article in articles">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                {{article.Name}}
+            </div>
+            <div class="panel-body">
+                <div>{{article.Description}}</div>
+                <div>$ {{article.Price | number:0}}</div>
+                <div>Total en Vitrina: {{article.TotalInShelf}}</div>
+                <div>Total en Bodega: {{article.TotalInVault}}</div>
+            </div>
+        </div>
+    </div>
+</div>
